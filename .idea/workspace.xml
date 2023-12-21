@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c81be3c7-98a2-43e5-a4e4-4315a77ee2f1" name="Changes" comment="Preparar repo para el mínimo 2" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;andreiipipoo&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3ccc4576-12ca-45f3-890b-db8bc90784a8" />
+        <option name="url" value="https://github.com/andreiipipoo/Projecte_DSA_G2_BackEnd.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2YDu7pBbnO7uCdEoP92fQEkJh1F" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/EETAC/2B/SO/Minim_2_BackEnd_Andrei",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.testRunning"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="edu.upc.dsa.exceptions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\EETAC\3A\DSA\Projecte_DSA_G2_BackEnd\.idea" />
+      <recent name="D:\EETAC\3A\DSA\Projecte_DSA_G2_BackEnd\src\main\java" />
+      <recent name="D:\EETAC\3A\DSA\Projecte_DSA_G2_BackEnd\public\swagger" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\charl\Desktop\DSA\Iteració_1\src\main\java\edu\upc\dsa\exceptions" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ItemManagerTest.addItemsTest">
+    <configuration name="ItemManagerTest.addItemsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-example2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.upc.dsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.upc.dsa" />
+      <option name="MAIN_CLASS_NAME" value="edu.upc.dsa.ItemManagerTest" />
+      <option name="METHOD_NAME" value="addItemsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerManagerTest.testRegisterPlayer (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-example2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.upc.dsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.upc.dsa" />
+      <option name="MAIN_CLASS_NAME" value="edu.upc.dsa.PlayerManagerTest" />
+      <option name="METHOD_NAME" value="testRegisterPlayer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrappyManagerImplTest.addItemsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-example2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.upc.dsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.upc.dsa" />
+      <option name="MAIN_CLASS_NAME" value="edu.upc.dsa.TrappyManagerImplTest" />
+      <option name="METHOD_NAME" value="addItemsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrappyManagerImplTest.registerUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-example2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.upc.dsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.upc.dsa" />
+      <option name="MAIN_CLASS_NAME" value="edu.upc.dsa.TrappyManagerImplTest" />
+      <option name="METHOD_NAME" value="registerUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrappyManagerTest.testPurchaseItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-example2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.upc.dsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.upc.dsa" />
+      <option name="MAIN_CLASS_NAME" value="edu.upc.dsa.TrappyManagerTest" />
+      <option name="METHOD_NAME" value="testPurchaseItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TrappyManagerImplTest.addItemsTest" />
+        <item itemvalue="JUnit.TrappyManagerImplTest.registerUserTest" />
+        <item itemvalue="JUnit.TrappyManagerTest.testPurchaseItem" />
+        <item itemvalue="JUnit.PlayerManagerTest.testRegisterPlayer (1)" />
+        <item itemvalue="JUnit.ItemManagerTest.addItemsTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c81be3c7-98a2-43e5-a4e4-4315a77ee2f1" name="Changes" comment="" />
+      <created>1700072308252</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700072308252</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Añadido todo lo relacionado con Item, test funciona.">
+      <option name="closed" value="true" />
+      <created>1700423261389</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700423261389</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Añadido todo lo relacionado con Item, test funciona.">
+      <option name="closed" value="true" />
+      <created>1700423317487</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700423317487</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update .html para el login, register, shop">
+      <option name="closed" value="true" />
+      <created>1700507680368</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700507680368</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Hemos pasado a HASHMAP (cambio de toda estructura)">
+      <option name="closed" value="true" />
+      <created>1700593356231</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700593356231</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Volver a los inicios, falta Services...">
+      <option name="closed" value="true" />
+      <created>1702959857355</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702959857356</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Projecte aixecat en servidor">
+      <option name="closed" value="true" />
+      <created>1703008721307</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703008721307</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Rutes actualitzades ip servidor">
+      <option name="closed" value="true" />
+      <created>1703061212976</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703061212976</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Rutes actualitzades ip servidor">
+      <option name="closed" value="true" />
+      <created>1703071967473</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703071967473</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Rutes actualitzades ip servidor">
+      <option name="closed" value="true" />
+      <created>1703072666977</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703072666977</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Rutes actualitzades html v2">
+      <option name="closed" value="true" />
+      <created>1703072708982</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703072708982</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Registre (local) working">
+      <option name="closed" value="true" />
+      <created>1703092439626</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1703092439626</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Registre (local) working telephone">
+      <option name="closed" value="true" />
+      <created>1703148092360</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1703148092360</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="-Clase PlayerManagerImpl con funciones de Login, Register y comprar un Item. En proceso la creación de la pagina web html de la tienda, mañana acabada." />
+    <MESSAGE value="Four Commit" />
+    <MESSAGE value="Añadido todo lo relacionado con Item, test funciona." />
+    <MESSAGE value="Update .html para el login, register, shop" />
+    <MESSAGE value="Hemos pasado a HASHMAP (cambio de toda estructura)" />
+    <MESSAGE value="Volver a los inicios, falta Services..." />
+    <MESSAGE value="Projecte aixecat en servidor" />
+    <MESSAGE value="Rutes actualitzades ip servidor" />
+    <MESSAGE value="Rutes actualitzades html v2" />
+    <MESSAGE value="Registre (local) working" />
+    <MESSAGE value="Registre (local) working telephone" />
+    <option name="LAST_COMMIT_MESSAGE" value="Registre (local) working telephone" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Projecte_DSA_G2_BackEnd$Main.ic" NAME="Main Coverage Results" MODIFIED="1702995632974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>edu.upc.dsa.*</FILTER>
+    </SUITE>
+  </component>
+</project>

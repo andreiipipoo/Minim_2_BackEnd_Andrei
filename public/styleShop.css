@@ -1,0 +1,79 @@
+body {
+            text-align: center;
+            background-image: url('');
+
+        }
+
+        div.escape-room-item {
+            width: 30%;
+            display: inline-block;
+            vertical-align: top; /* Alinear los elementos en la parte superior */
+            margin: 10px;
+        }
+
+        .escape-room-item {
+            background-color: #fff;
+            padding: 1px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: '', Luminary;
+        }
+
+        h1,h2, p {
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 40%;
+            height: 10;
+            border-radius: 8px;
+        }
+        .shop-font {
+                    background-size: cover;
+                    background-position: center;
+                    color: white; /* Color del texto sobre la imagen */
+                    padding: 30px;
+                    text-align: center;
+                    font-family: '', Luminary;
+                    letter-spacing: 2px; /* Espaciado entre letras */
+                    font-size: 16px; /* Tamaño de la fuente */
+                }
+        .shop-container {
+            background-image: url("https://www.xtrafondos.com/wallpapers/cabana-en-el-bosque-11374.jpg"); /* Ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            color: white; /* Color del texto sobre la imagen */
+            padding: 30px;
+            text-align: center;
+            font-family: '', Luminary;
+            letter-spacing: 2px; /* Espaciado entre letras */
+            font-size: 16px; /* Tamaño de la fuente */
+        }
+        .custom-btnShop {
+            background: white; /* Light blue to dark blue */
+            border: none;
+            padding: 10px 200px;
+            text-align: center;
+            text-decoration: none;
+            display: 40px;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            text-transform: uppercase;  Convertir el texto a mayúsculas
+        }
+        .custom-btnShop:hover {
+        background: grey;
+        }
+        .custom-font {
+            font-family: '', Luminary; /* Reemplaza 'Arial' con la fuente que desees */
+            /* Otros estilos para el título si es necesario */
+        }
+        #logoutButton {
+                    margin-top: 20px;
+                }
+        .signup-link {
+                    color: #007bff;
+                    text-align: center;
+                }

@@ -1,0 +1,112 @@
+Index: src/main/java/edu/upc/dsa/ItemManagerImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package edu.upc.dsa;\r\n\r\n\r\nimport java.util.LinkedList;\r\nimport java.util.List;\r\nimport edu.upc.dsa.models.Item;\r\nimport org.apache.log4j.Logger;\r\n\r\npublic class ItemManagerImpl implements ItemManager {\r\n\r\n        private static ItemManager instance;\r\n        protected List<Item> items;\r\n        final static Logger logger = Logger.getLogger(ItemManagerImpl.class);\r\n\r\n        private ItemManagerImpl() {\r\n            this.items = new LinkedList<>();\r\n        }\r\n        public static ItemManager getInstance() {\r\n            if (instance == null) instance = new ItemManagerImpl();\r\n            return instance;\r\n        }\r\n        public int ItemNumber() {\r\n            return this.items.size();\r\n        }\r\n        public List<Item> ShopItems() {\r\n            items.add(new Item(\"Flashlight\", \"+20faster\", \"Potion\", 10));\r\n            items.add(new Item(\"Key\", \"Escudo de madera\", \"Arma\", 10));\r\n            items.add(new Item(\"The horn\", \"+20faster\", \"Potion\", 10));\r\n            items.add(new Item(\"Escudo\",\"Escudo de madera\", \"Arma\", 10));\r\n            items.add(new Item(\"Magnesi\", \"+20faster\", \"Potion\", 10));\r\n            items.add(new Item(\"Escudo\", \"Escudo de madera\", \"Arma\", 10));\r\n            logger.info(\"Items added to the shop\");\r\n            return items;\r\n        }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/edu/upc/dsa/ItemManagerImpl.java b/src/main/java/edu/upc/dsa/ItemManagerImpl.java
+--- a/src/main/java/edu/upc/dsa/ItemManagerImpl.java	
++++ b/src/main/java/edu/upc/dsa/ItemManagerImpl.java	
+@@ -1,35 +1,60 @@
+ package edu.upc.dsa;
+ 
+-
++import java.util.HashMap;
+ import java.util.LinkedList;
+ import java.util.List;
++import edu.upc.dsa.models.*;
++import edu.upc.dsa.exceptions.NoCoinsForBuyException;
++import edu.upc.dsa.exceptions.PlayerNotResgisteredException;
+ import edu.upc.dsa.models.Item;
++import edu.upc.dsa.models.Player;
+ import org.apache.log4j.Logger;
+ 
+ public class ItemManagerImpl implements ItemManager {
+ 
+-        private static ItemManager instance;
+-        protected List<Item> items;
+-        final static Logger logger = Logger.getLogger(ItemManagerImpl.class);
++    private HashMap<String, Player> playerHashMap;
++    private static ItemManager instance;
++    protected List<Item> items;
++    final static Logger logger = Logger.getLogger(ItemManagerImpl.class);
+ 
+-        private ItemManagerImpl() {
++    private ItemManagerImpl() {
+             this.items = new LinkedList<>();
+-        }
+-        public static ItemManager getInstance() {
+-            if (instance == null) instance = new ItemManagerImpl();
+-            return instance;
+-        }
+-        public int ItemNumber() {
++        }public static ItemManager getInstance() {
++        if (instance == null) instance = new ItemManagerImpl();
++        return instance;
++    }
++    public int ItemNumber() {
+             return this.items.size();
+-        }
+-        public List<Item> ShopItems() {
+-            items.add(new Item("Flashlight", "+20faster", "Potion", 10));
+-            items.add(new Item("Key", "Escudo de madera", "Arma", 10));
+-            items.add(new Item("The horn", "+20faster", "Potion", 10));
+-            items.add(new Item("Escudo","Escudo de madera", "Arma", 10));
+-            items.add(new Item("Magnesi", "+20faster", "Potion", 10));
+-            items.add(new Item("Escudo", "Escudo de madera", "Arma", 10));
+-            logger.info("Items added to the shop");
+-            return items;
++        }public List<Item> shopItems() {
++        items.add(new Item("Flashlight", "c", "Potion", 10));
++        items.add(new Item("Key", "Escudo de madera", "Arma", 10));
++        items.add(new Item("The horn", "+20faster", "Potion", 10));
++       // items.add(new Item("Escudo",,"Escudo de madera", "Arma", 10));
++        //items.add(new Item("Magnesi",, "+20faster", "Potion", 10));
++        //items.add(new Item("Escudo",, "Escudo de madera", "Arma", 10));
++        logger.info("Items added to the shop");
++        return items;
++    }
++    @Override
++    public Item purchaseItem(String name, String username) throws NoCoinsForBuyException, PlayerNotResgisteredException {
++        Player player = playerHashMap.get(username);
++        if (player == null) {
++            logger.warn("Player not registered");
++            throw new PlayerNotResgisteredException();
++        } else {
++            for (Item item : items) {
++                if (item.getName().equals(name)) {
++                    if (player.getCoins() >= item.getPrice()) {
++                        player.getInventario().add(item);
++                        logger.info("Item purchased correctly");
++                        return item;
++                    } else {
++                        logger.warn("Not enough money :(");
++                        throw new NoCoinsForBuyException();
++                    }
++                }
++            }
+         }
++        return null;
++    }
+ }
+Index: src/main/java/edu/upc/dsa/ItemManager.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package edu.upc.dsa;\r\n\r\nimport edu.upc.dsa.models.Item;\r\nimport java.util.List;\r\n\r\npublic interface ItemManager {\r\n    int ItemNumber();\r\n    List<Item> ShopItems();\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/edu/upc/dsa/ItemManager.java b/src/main/java/edu/upc/dsa/ItemManager.java
+--- a/src/main/java/edu/upc/dsa/ItemManager.java	
++++ b/src/main/java/edu/upc/dsa/ItemManager.java	
+@@ -1,9 +1,12 @@
+ package edu.upc.dsa;
+ 
++import edu.upc.dsa.exceptions.*;
+ import edu.upc.dsa.models.Item;
+ import java.util.List;
+ 
+ public interface ItemManager {
+     int ItemNumber();
+-    List<Item> ShopItems();
++    List<Item> shopItems();
++
++    Item purchaseItem(String name, String username) throws PlayerNotResgisteredException, NoCoinsForBuyException;
+ }
