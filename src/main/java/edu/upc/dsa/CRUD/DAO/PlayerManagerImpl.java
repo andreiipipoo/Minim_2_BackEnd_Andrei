@@ -14,6 +14,7 @@ import java.util.HashMap;
 
 public class PlayerManagerImpl implements PlayerManager {
     final static Logger logger = Logger.getLogger(PlayerManagerImpl.class);
+    protected List<QuestionFromPlayer> questions;
     private static PlayerManagerImpl instance;
     public static PlayerManagerImpl getInstance() {
         if (instance==null) instance = new PlayerManagerImpl();
@@ -69,5 +70,41 @@ public class PlayerManagerImpl implements PlayerManager {
         }
         logger.info("Player with id "+ player.getIdPlayer()  + " found");
         return player;
+    }
+
+    public void addQuestion(QuestionFromPlayer questionFromPlayer) throws SQLException {
+        Session session = null;
+        try {
+            session = FactorySession.openSession();
+            String date = questionFromPlayer.getDate();
+            String title = questionFromPlayer.getTitle();
+            String message = questionFromPlayer.getMessage();
+            String sender = questionFromPlayer.getSender();
+            logger.info("Sending question...");
+            logger.info("Question = Date: "+date+", Title: "+title+", Message: "+message+", Sender: "+sender+".");
+            session.save(questionFromPlayer);
+            questions.add(questionFromPlayer);
+            //return report;
+        } catch(SQLException e){
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+    }
+
+    @Override
+    public List<QuestionFromPlayer> getQuestionsFromPlayer() throws SQLException {
+        Session session = null;
+        try{
+            session = FactorySession.openSession();
+            List<QuestionFromPlayer> questionFromPlayerList = new ArrayList<QuestionFromPlayer>();
+            questionFromPlayerList = session.findAll(QuestionFromPlayer.class);
+            return questionFromPlayerList;
+        } catch (Exception e) {
+            logger.error("Error getting questions from player", e);
+        } finally {
+            session.close();
+        }
+        return null;
     }
 }

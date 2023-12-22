@@ -77,4 +77,23 @@ public class PlayerService {
             return Response.status(402).build();
         }
     }
+
+    @POST
+    @ApiOperation(value = "Question/Consult of a player", notes = "Add a question/consult of a player")
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Successful"),
+            @ApiResponse(code = 401, message = "Error")
+    })
+    @Path("/question")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response addQuestion(QuestionFromPlayer questionFromPlayer) throws SQLException {
+        try {
+            this.pm.addQuestion(questionFromPlayer);
+            return Response.status(201).build();
+        } catch (SQLException e) {
+            logger.error("SQLException");
+            return Response.status(401).build();
+        }
+    }
 }

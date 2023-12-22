@@ -9,4 +9,6 @@ public interface PlayerManager {
     public int addPlayer(String id, String username, String password, String telephone, String email);
     public Player getPlayerById(String id);
     public Player getPlayerByUsername(String username);
+    void addQuestion(QuestionFromPlayer questionFromPlayer) throws SQLException;
+    List<QuestionFromPlayer> getQuestionsFromPlayer() throws SQLException;
 }
